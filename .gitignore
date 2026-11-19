@@ -1,0 +1,5 @@
+out/
+transcripts.tar.gz
+__pycache__/
+*.pyc
+.makefun/system-prompt.txt
