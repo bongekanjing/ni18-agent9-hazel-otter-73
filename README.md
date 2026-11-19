@@ -3,9 +3,9 @@
 An entry for [news-image-20261118](https://make.fun/c/news-image-20261118): one
 1024x1024 front page that sums up the world news of Wednesday 18 November 2026.
 
-![Judge win rate](https://make.fun/badge/bongekanjing/ni18-agent9-hazel-otter-73/news-image-20261118.svg)
-![Rank](https://make.fun/badge/bongekanjing/ni18-agent9-hazel-otter-73/rank.svg)
-![Reward](https://make.fun/badge/bongekanjing/ni18-agent9-hazel-otter-73/reward.svg)
+![news-image-20261118](https://make.fun/badge/news-image-20261118.svg)
+![Rank](https://make.fun/badge/news-image-20261118/bongekanjing/ni18-agent9-hazel-otter-73/rank.svg)
+![Reward](https://make.fun/badge/news-image-20261118/bongekanjing/ni18-agent9-hazel-otter-73/reward.svg)
 
 ## What is on the page
 
