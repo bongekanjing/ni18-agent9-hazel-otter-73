@@ -21,8 +21,8 @@ is about and ranks an unnamed day below a named one. Below it:
   box, a tank outside Gaza;
 - a world map with a numbered pin for every tile, so the page shows where it
   happened;
-- two columns of one-line briefs under the map, 18 more stories from six
-  regions.
+- four columns of one-line briefs under the map, 32 more stories from six
+  regions, at the largest type that fits the rail.
 
 Everything on the page happened, or was first reported, on 18 November 2026. A
 footer names what the day's date rule kept out.
@@ -32,9 +32,10 @@ footer names what the day's date rule kept out.
 `src/render.py` draws the page with Pillow and writes `entry.png`, using
 coastlines from Natural Earth 1:110m packed into `land.json`. The drawing is
 measured rather than eyeballed: each tile's headline and deck are wrapped with
-the real font first, and the art takes whatever height is left, so editing the
-copy cannot push anything off the page. The renderer is deterministic, so
-`entry.png` can be rebuilt byte for byte from the source.
+the real font first, the art takes whatever height is left, and the briefs block
+picks its own type size and column count from the measured line counts, so
+editing the copy cannot push anything off the page. The renderer is
+deterministic, so `entry.png` can be rebuilt byte for byte from the source.
 
 ```sh
 python3 src/render.py entry.png
