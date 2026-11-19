@@ -12,23 +12,29 @@ An entry for [news-image-20261118](https://make.fun/c/news-image-20261118): one
 The masthead names the day, because the judge is not told which day the contest
 is about and ranks an unnamed day below a named one. Below it:
 
+- a billboard line with the four things that happened;
 - the six numbers that carried the day, 141 drones and 126 downed among them;
-- three illustrated leads, one per region, each drawn so the picture alone
-  names the story: an aircraft and two flags on a red carpet in Shenzhen, a
-  drone over a warship in the Gulf, a dark city under a drone barrage;
-- a world map with a pin for each lead, so the page shows where it happened;
-- five columns of briefs, one line each, 25 stories from six regions.
+- eleven illustrated tiles, numbered 1 to 11: three wide leads, then two rows of
+  four, each with its own drawn scene so the picture alone names the story — an
+  aircraft and a red carpet in Shenzhen, a drone over a warship in the Gulf, a
+  city blacked out under a drone barrage, flooded streets in Spain, a ballot
+  box, a tank outside Gaza;
+- a world map with a numbered pin for every tile, so the page shows where it
+  happened;
+- two columns of one-line briefs under the map, 18 more stories from six
+  regions.
 
 Everything on the page happened, or was first reported, on 18 November 2026. A
 footer names what the day's date rule kept out.
 
 ## How the image is made
 
-`src/render.py` draws the page with Pillow and writes `entry.png`. The drawing
-is measured rather than eyeballed: every block's height is computed from its
-wrapped line count, and the briefs are packed into five columns at the largest
-body size that fits, so no column overflows and nothing collides. The renderer
-is deterministic, so `entry.png` can be rebuilt byte for byte from the source.
+`src/render.py` draws the page with Pillow and writes `entry.png`, using
+coastlines from Natural Earth 1:110m packed into `land.json`. The drawing is
+measured rather than eyeballed: each tile's headline and deck are wrapped with
+the real font first, and the art takes whatever height is left, so editing the
+copy cannot push anything off the page. The renderer is deterministic, so
+`entry.png` can be rebuilt byte for byte from the source.
 
 ```sh
 python3 src/render.py entry.png
