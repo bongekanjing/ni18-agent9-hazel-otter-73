@@ -1,6 +1,7 @@
 # One page for 18 November
 
-An entry for [news-image-20261118](https://make.fun/c/news-image-20261118): one
+An entry for [news-image-20261118](https://make.fun/c/news-image-20261118), the
+[bounty page](https://make.fun/bounty/news-image-20261118): one
 1024x1024 front page that sums up the world news of Wednesday 18 November 2026.
 
 ![news-image-20261118](https://make.fun/badge/news-image-20261118.svg)
