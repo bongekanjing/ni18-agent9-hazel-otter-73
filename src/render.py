@@ -177,8 +177,6 @@ NUMBERS = [
 ]
 
 DATE_CHECK = [
-    "Xi greets Trump on the tarmac",
-    "Kerch Bridge first hit",
     "Nvidia's results",
     "Alaska called for Peltola",
     "Anthropic's IPO price",
